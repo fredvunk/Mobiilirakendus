@@ -54,3 +54,32 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.period, .graph {
+    display:flex;
+    margin-bottom:3vh;
+}
+.graph, .detailed-info {
+    height:25vh;
+}
+.time , .graph-element{
+    text-align: center;
+}
+.graph-element{
+}
+.graph-bar{
+    width:20%;
+    margin:auto;
+    border-radius:5%;
+    box-shadow: 1px 2px 2px grey;
+}
+.detailed-bar{
+    width:2% !important;
+    height:45%;
+    margin:auto;
+    border-radius:100%;
+}
+.detailed-element{
+    height:15%;
+    margin-bottom:10%;
+    text-align:center;
+}
