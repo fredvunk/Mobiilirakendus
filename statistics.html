@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+</head>
+
+<body>
+<div data-role="page" id="foo">
+    <!-- /header -->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>Task stopper</h1>
+    </div>
+
+    <!-- /content -->
+    <div role="main" class="ui-content">
+        <div class="period ui-grid-d">
+            <div class="time ui-block-a">Day</div>
+            <div class="time ui-block-b">Week</div>
+            <div class="time ui-block-c">Month</div>
+            <div class="time ui-block-d">6 Mon</div>
+            <div class="time ui-block-e">Year</div>
+        </div>
+        <div class="graph ui-grid-d">
+            <div class="graph-element ui-block-a"><div class="graph-bar" style="background-color:red; height:10%;"></div></div>
+            <div class="graph-element ui-block-b"><div class="graph-bar" style="background-color:blue; height:20%;"></div></div>
+            <div class="graph-element ui-block-c"><div class="graph-bar" style="background-color:yellow; height:50%;"></div></div>
+            <div class="graph-element ui-block-d"><div class="graph-bar" style="background-color:green; height:70%;"></div></div>
+            <div class="graph-element ui-block-e"><div class="graph-bar" style="background-color:purple; height:40%;"></div></div>
+            <div class="graph-element ui-block-f"><div class="graph-bar" style="background-color:cyan; height:100%;"></div></div>
+        </div>
+        <div class="period ui-grid-d">
+            <div class="time ui-block-a"> </div>
+            <div class="time ui-block-b">Avg</div>
+            <div class="time ui-block-c">Most</div>
+            <div class="time ui-block-d">Least</div>
+            <div class="time ui-block-e">Total</div>
+        </div>
+        <div class="detailed-info">
+            <div class="detailed-element ui-grid-d"><div class="detailed-bar ui-block-a" style="background-color:red"></div><div class="ui-block-b" style="margin-left:18%">5h</div><div class="ui-block-c">5h</div><div class="ui-block-d">5h</div><div class="ui-block-d">5h</div></div>
+            <div class="detailed-element ui-grid-d"><div class="detailed-bar ui-block-a" style="background-color:blue"></div><div class="ui-block-b" style="margin-left:18%">5h</div><div class="ui-block-c">5h</div><div class="ui-block-d">5h</div><div class="ui-block-e">5h</div></div>
+            <div class="detailed-element ui-grid-d"><div class="detailed-bar ui-block-a" style="background-color:yellow"></div><div class="ui-block-b" style="margin-left:18%">5h</div><div class="ui-block-c">5h</div><div class="ui-block-d">5h</div><div class="ui-block-e">5h</div></div>
+            <div class="detailed-element ui-grid-d"><div class="detailed-bar ui-block-a" style="background-color:green"></div><div class="ui-block-b" style="margin-left:18%">5h</div><div class="ui-block-c">5h</div><div class="ui-block-d">5h</div><div class="ui-block-e">5h</div></div>
+            <div class="detailed-element ui-grid-d"><div class="detailed-bar ui-block-a" style="background-color:purple"></div><div class="ui-block-b" style="margin-left:18%">5h</div><div class="ui-block-c">5h</div><div class="ui-block-d">5h</div><div class="ui-block-e">5h</div></div>
+            <div class="detailed-element ui-grid-d"><div class="detailed-bar ui-block-a" style="background-color:cyan"></div><div class="ui-block-b" style="margin-left:18%">5h</div><div class="ui-block-c">5h</div><div class="ui-block-d">5h</div><div class="ui-block-e">5h</div></div>
+        </div>
+    </div>
+
+    <!-- /footer -->
+    <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#" data-role="button" data-icon="home" data-iconpos="top">Nupp1</a>
+                </li>
+                <li>
+                    <a href="#" data-role="button" data-icon="check" data-iconpos="top">Nupp2</a>
+                </li>
+                <li>
+                    <a href="#" data-role="button" data-icon="plus" data-iconpos="top">Nupp3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
