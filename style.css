@@ -1,3 +1,7 @@
+* {
+    text-shadow: 0 0 0 transparent;
+    text-shadow: none;
+}
 .list-group-item:first-child {
     border-radius: 15px;
 }
@@ -41,4 +45,12 @@
 
 #time:after {
 	background-image: url("./img/timeicon.png");
+}
+
+.chart {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
